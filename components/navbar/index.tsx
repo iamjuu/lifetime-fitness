@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const maxWidth = '1300px'
+  // const maxWidth = '1300px'
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -19,14 +19,14 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed w-full top-0 z-50">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth }}>
+    <nav className=" w-full top-0 z-50">
+      <div className=" px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - Left Side */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-[var(--primary-color)]">
-                Lifetime Fitness
+              <span className="text-2xl font-bold text-[var(--secondary-color)]">
+               Logo
               </span>
             </Link>
           </div>
