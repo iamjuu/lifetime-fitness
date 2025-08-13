@@ -15,7 +15,7 @@ const StickyWhatsApp = () => {
     <div className="fixed bottom-24 right-6 z-50">
       <button
         onClick={handleWhatsAppClick}
-        className="  text-white p-4 rounded-full shadow-lg hover:shadow-xl  transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 group"
+        className="  text-white rounded-full shadow-lg hover:shadow-xl  animate-bounce transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 group"
         aria-label="Contact us on WhatsApp"
       >
         {/* <FontAwesomeIcon 
