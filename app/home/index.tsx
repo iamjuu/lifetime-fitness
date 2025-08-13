@@ -157,25 +157,25 @@ const index = () => {
     </div>
 
 <div className='w-full py-6'>
-  <div className='w-full  rounded-md bg-[rgba(255,255,255,0.03)]/10 backdrop-blur-[2px]'>
+  <div className='w-full rounded-md bg-[rgba(255,255,255,0.03)]/10 backdrop-blur-[2px]'>
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[rgba(217,10,20,0.25)]'>
-      <div className='flex items-start gap-3 p-5'>
+      <div className='flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left'>
         <span className='text-3xl sm:text-4xl font-extrabold text-[#D90A14]'>{displaySatisfaction}%</span>
-        <div className=' flex flex-col gap-2'>
+        <div className='flex flex-col gap-2'>
           <p className='text-white font-semibold'>Client Satisfaction</p>
           <p className='text-xs text-gray-400'>Our Members Love Their Results</p>
         </div>
       </div>
 
-      <div className='flex items-start gap-3 p-5'>
+      <div className='flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left'>
         <span className='text-3xl sm:text-4xl font-extrabold text-[#D90A14]'>+{displayYears}</span>
-        <div className='flex flex-col gap-2 '>
+        <div className='flex flex-col gap-2'>
           <p className='text-white font-semibold'>Years Of Experience</p>
           <p className='text-xs text-gray-400'>Proven Track Record Of Transforming</p>
         </div>
       </div>
 
-      <div className='flex items-start gap-3 p-5'>
+      <div className='flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left'>
         <span className='text-3xl sm:text-4xl font-extrabold text-[#D90A14]'>+{displayMembers}</span>
         <div className='flex flex-col gap-2'>
           <p className='text-white font-semibold'>Active Members</p>
@@ -183,16 +183,19 @@ const index = () => {
         </div>
       </div>
 
-      <div className='flex items-start gap-3 p-5'>
+      <div className='flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left'>
         <span className='text-3xl sm:text-4xl font-extrabold text-[#D90A14]'>24/{displaySupport}</span>
         <div className='flex flex-col gap-2'>
-          <p className='text-white text-[20px]  font-semibold'>Support Available</p>
+          <p className='text-white text-[20px] font-semibold'>Support Available</p>
           <p className='text-xs text-gray-400'>Expert Assistance When You Need It</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
 
     </div>
   )
