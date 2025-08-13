@@ -3,6 +3,9 @@ import Navbar from "@/components/navbar";
 import HomePage from "./home";
 import { Background } from "@/public";
 export default function Page() {
+
+  const maxWidth = '1300px'
+
   return (
  <div 
  style={{
@@ -11,9 +14,13 @@ export default function Page() {
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
  }}
- className="flex  min-h-screen flex-col gap-15">
+ className="flex w-full  min-h-screen flex-col ">
+<div  className="w-full mx-auto" style={{ maxWidth }}>
+
+
   <Navbar/>
   <HomePage/>
+ </div>
  </div>
   );
 }
