@@ -19,7 +19,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-white fixed w-full top-0 z-50">
+    <nav className="fixed w-full top-0 z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth }}>
         <div className="flex justify-between items-center h-16">
           {/* Logo - Left Side */}
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-[var(--primary-color)] hover:text-[var(--secondary-color)] px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                  className="text-white px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--secondary-color)] transition-all duration-300 ease-in-out group-hover:w-full"></span>

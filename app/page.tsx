@@ -1,10 +1,19 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar";
-export default function Home() {
+import HomePage from "./home";
+import { Background } from "@/public";
+export default function Page() {
   return (
- <div>
+ <div 
+ style={{
+  backgroundImage: `url(${Background.src})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+ }}
+ className="flex  min-h-screen flex-col gap-15">
   <Navbar/>
-  <h1>cgvhb</h1>
+  <HomePage/>
  </div>
   );
 }
