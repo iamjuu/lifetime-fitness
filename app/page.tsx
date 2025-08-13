@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import HomePage from "./home";
-import { Background } from "@/public";
+import Footer from "@/components/footer";
+
 export default function Page() {
 
   const maxWidth = '1300px'
@@ -9,10 +10,10 @@ export default function Page() {
   return (
  <div 
  style={{
-  backgroundImage: `url(${Background.src})`,
+  backgroundImage: `url('/image/gymbg.png')`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
+  backgroundRepeat: 'repeat',
  }}
  className="flex w-full  min-h-screen flex-col ">
 <div  className="w-full mx-auto" style={{ maxWidth }}>
@@ -20,6 +21,11 @@ export default function Page() {
 
   <Navbar/>
   <HomePage/>
+ </div>
+ {/* footer  */}
+ <div className="pt-15">
+
+<Footer />
  </div>
  </div>
   );
