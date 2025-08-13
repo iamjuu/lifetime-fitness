@@ -218,9 +218,9 @@ const index = () => {
   return (
  
     <div>
-      <div className="w-full items-center justify-center flex flex-col lg:flex-row px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+      <div className="w-full items-center justify-center z-0 flex flex-col lg:flex-row px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         <div className="w-full lg:w-[50%] flex flex-col gap-5 text-center lg:text-left">
-          <div className="flex flex-col gap-5 items-center lg:items-start">
+          <div className="flex flex-col z-[-1] gap-5 items-center lg:items-start">
             <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold" data-aos="fade-right" data-aos-delay="100">
               Achieve Your
             </h1>
@@ -232,8 +232,8 @@ const index = () => {
             </h1>
           </div>
 
-          <div className="text-center lg:text-left mb-8" data-aos="fade-up" data-aos-delay="400">
-            <p className="text-white text-base sm:text-lg leading-relaxed">
+          <div className="text-center  z-[-1] lg:text-left mb-8" data-aos="fade-up" data-aos-delay="400">
+            <p className="text-white text-base sm:text-lg  z-[-1] leading-relaxed">
               Join The Fitmaker Community And Transform Your Fitness Journey.
               Our Expert Coaches And Personalized Programs Are Designed To Help
               You Achieve Your Goals And Exceed Your Expectations. Ready To Make
