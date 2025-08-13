@@ -221,18 +221,18 @@ const index = () => {
       <div className="w-full items-center justify-center flex flex-col lg:flex-row px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         <div className="w-full lg:w-[50%] flex flex-col gap-5 text-center lg:text-left">
           <div className="flex flex-col gap-5 items-center lg:items-start">
-            <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold" data-aos="fade-right" data-aos-delay="100">
               Achieve Your
             </h1>
-            <h1 className="text-[var(--secondary-color)] text-4xl sm:text-5xl lg:text-7xl font-medium">
+            <h1 className="text-[var(--secondary-color)] text-4xl sm:text-5xl lg:text-7xl font-medium" data-aos="fade-right" data-aos-delay="200">
               Fitness Goals
             </h1>
-            <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold" data-aos="fade-right" data-aos-delay="300">
               With FitMaker
             </h1>
           </div>
 
-          <div className="text-center lg:text-left mb-8">
+          <div className="text-center lg:text-left mb-8" data-aos="fade-up" data-aos-delay="400">
             <p className="text-white text-base sm:text-lg leading-relaxed">
               Join The Fitmaker Community And Transform Your Fitness Journey.
               Our Expert Coaches And Personalized Programs Are Designed To Help
@@ -241,12 +241,12 @@ const index = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="500">
             <PrimaryButton>Start Your Journey</PrimaryButton>
             <SecondaryButton>Explore Programs</SecondaryButton>
           </div>
         </div>
-        <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-end mt-8 lg:mt-0">
+        <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-end mt-8 lg:mt-0" data-aos="fade-left" data-aos-delay="300">
           <Image
             alt="hero"
             src={Hero}
@@ -258,10 +258,10 @@ const index = () => {
       </div>
 
       {/* counter  */}
-      <div className="w-full py-3 md:py-6">
+      <div className="w-full py-3 md:py-6" data-aos="fade-up" data-aos-delay="200">
         <div className="w-full rounded-md bg-[rgba(255,255,255,0.03)]/10 backdrop-blur-[2px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[rgba(217,10,20,0.25)]">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left" data-aos="zoom-in" data-aos-delay="300">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#D90A14]">
                 {displaySatisfaction}%
               </span>
@@ -273,7 +273,7 @@ const index = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left" data-aos="zoom-in" data-aos-delay="400">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#D90A14]">
                 +{displayYears}
               </span>
@@ -285,7 +285,7 @@ const index = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left" data-aos="zoom-in" data-aos-delay="500">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#D90A14]">
                 +{displayMembers}
               </span>
@@ -297,7 +297,7 @@ const index = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 p-5 text-center sm:text-left" data-aos="zoom-in" data-aos-delay="600">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#D90A14]">
                 24/{displaySupport}
               </span>
@@ -315,13 +315,13 @@ const index = () => {
       </div>
 
       {/* services  */}
-      <div className="w-full py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+      <div className="w-full py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="200">
         <div className="w-full max-w-6xl mx-auto items-center justify-center flex flex-col gap-4 sm:gap-6 lg:gap-8 text-center">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 items-center justify-center">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 items-center justify-center" data-aos="fade-up" data-aos-delay="300">
             <span>Our</span>
             <span className="text-[var(--secondary-color)]">Services</span>
           </h1>
-          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-4">
+          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-4" data-aos="fade-up" data-aos-delay="400">
             Discover Our Comprehensive Fitness Programs Tailored To Your Needs.
             From Personal Training To Group Classes, We Offer A Wide Range Of
             Options To Help You Achieve Your Goals.
@@ -331,10 +331,12 @@ const index = () => {
         <div className="py-10 ">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-              {categoryData.map((category) => (
+              {categoryData.map((category, index) => (
                 <div
                   key={category.id}
                   className="w-full h-64 rounded-lg border border-[var(--secondary-color)] px-3 pt-10 pb-3 relative overflow-hidden group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[var(--secondary-color)]"
+                  data-aos="fade-up"
+                  data-aos-delay={500 + (index * 100)}
                   style={{
                     backgroundImage: `url(${category.image.src})`,
                     backgroundSize: "cover",
@@ -362,20 +364,20 @@ const index = () => {
       </div>
 
       {/* plan  */}
-      <div className="w-full py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+      <div className="w-full py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="200">
         <div className="w-full mx-auto items-center justify-center flex flex-col gap-4 sm:gap-6 lg:gap-8 text-center">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 items-center justify-center">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 items-center justify-center" data-aos="fade-up" data-aos-delay="300">
             <span>Our</span>
             <span className="text-[var(--secondary-color)]">Plans</span>
           </h1>
-          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-4">
+          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-4" data-aos="fade-up" data-aos-delay="400">
             Select The Plan That Suits You Best And Start Your Fitness Journey
             Today.
           </p>
         </div>
 
         {/* Pricing Toggle */}
-        <div className="w-full flex items-center justify-center mb-8">
+        <div className="w-full flex items-center justify-center mb-8" data-aos="fade-up" data-aos-delay="500">
           <div className="bg-gray-800 flex gap-3 px-2 py-2 rounded-full">
             <button
               onClick={() => setIsYearly(false)}
@@ -404,7 +406,7 @@ const index = () => {
         <div className="py-10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 group">
-              {pricingPlans.map((plan) => (
+              {pricingPlans.map((plan, index) => (
                 <div
                   key={plan.id}
                   className={`relative bg-gray-800 rounded-lg border-2 ${
@@ -412,6 +414,8 @@ const index = () => {
                   } p-6 transition-all duration-300 hover:scale-105 flex flex-col h-full group-hover:blur-sm hover:blur-none hover:scale-110 ${
                     plan.popular ? "ring-2 ring-red-500 ring-opacity-50" : ""
                   }`}
+                  data-aos="fade-up"
+                  data-aos-delay={600 + (index * 100)}
                 >
                   {/* Blue overlay with 10% opacity */}
                   <div className="absolute inset-0 bg-blue-100/10 rounded-lg pointer-events-none"></div>
@@ -479,13 +483,13 @@ const index = () => {
       </div>
 
       {/* tools  */}
-      <div className="w-full py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+      <div className="w-full py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="200">
         <div className="w-full max-w-6xl mx-auto items-center justify-center flex flex-col gap-4 sm:gap-6 lg:gap-8 text-center">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 items-center justify-center">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 items-center justify-center" data-aos="fade-up" data-aos-delay="300">
             <span>Our</span>
             <span className="text-[var(--secondary-color)]">Services</span>
           </h1>
-          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-4">
+          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-4" data-aos="fade-up" data-aos-delay="400">
             Discover Our Comprehensive Fitness Programs Tailored To Your Needs.
             From Personal Training To Group Classes, We Offer A Wide Range Of
             Options To Help You Achieve Your Goals.
@@ -495,8 +499,8 @@ const index = () => {
         <div className="py-10 w-full ">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-              {toolsData.map((image) => (
-                <div key={image.id} className="lg:h-32 lg:w-60 ">
+              {toolsData.map((image, index) => (
+                <div key={image.id} className="lg:h-32 lg:w-60 " data-aos="zoom-in" data-aos-delay={500 + (index * 100)}>
                   <div className="w-full flex items-center justify-center  transition-all duration-300 hover:shadow-lg hover:shadow-[var(--secondary-color)] hover:scale-105">
                     <Image
                       src={image.image}

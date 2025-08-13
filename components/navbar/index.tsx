@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className=" px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - Left Side */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0" data-aos="fade-right" data-aos-delay="100">
             <Link href="/" className="flex items-center">
               <span className="text-2xl font-bold text-[var(--secondary-color)]">
                Logo
@@ -34,11 +34,13 @@ const Navbar = () => {
           {/* Desktop Navigation - Center */}
           <div className="hidden md:flex flex-1 justify-center">
             <div className="flex items-baseline space-x-8">
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className="text-white px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                  data-aos="fade-down"
+                  data-aos-delay={200 + (index * 100)}
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--secondary-color)] transition-all duration-300 ease-in-out group-hover:w-full"></span>
@@ -48,7 +50,7 @@ const Navbar = () => {
           </div>
 
           {/* Register Button - Right Side */}
-          <div className="hidden md:block">
+          <div className="hidden md:block" data-aos="fade-left" data-aos-delay="600">
             <Link
               href="#"
               className="bg-[var(--secondary-color)] hover:bg-[var(--primary-color)] text-white px-6 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out hover:scale-110 hover:translate-x-2 hover:shadow-xl"
@@ -58,7 +60,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden" data-aos="fade-left" data-aos-delay="100">
             <button
               onClick={toggleMenu}
               className="text-[var(--primary-color)] hover:text-[var(--secondary-color)] focus:outline-none focus:text-[var(--secondary-color)]"
@@ -92,21 +94,23 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden" data-aos="fade-down" data-aos-delay="100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className="text-[var(--primary-color)] hover:text-[var(--secondary-color)] block px-3 py-2 text-base font-medium transition-colors duration-200 relative group"
                 onClick={() => setIsMenuOpen(false)}
+                data-aos="fade-right"
+                data-aos-delay={200 + (index * 100)}
               >
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--secondary-color)] transition-all duration-300 ease-in-out group-hover:w-full"></span>
               </Link>
             ))}
                          {/* Register Button for Mobile */}
-             <div className="pt-4 pb-2">
+             <div className="pt-4 pb-2" data-aos="fade-up" data-aos-delay="600">
                <Link
                  href="#"
                  className="bg-[var(--secondary-color)] hover:bg-[var(--primary-color)] text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ease-in-out hover:scale-110 hover:translate-x-2 hover:shadow-xl text-center"

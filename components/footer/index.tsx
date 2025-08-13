@@ -1,7 +1,7 @@
 "use client"    
 
 import React from 'react';
-import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ArrowUp, MessageCircle } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ArrowUp, MessageCircle,   } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { PrimaryButton } from '../button';
@@ -14,7 +14,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white/10 w-full text-white">
+    <footer className="bg-[#090e12] w-full text-white">
       {/* Main Footer Content */}
       <div className="w-full max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -28,14 +28,17 @@ const Footer = () => {
               <a href="https://wa.me/971566922585" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
               </a>
-              <a href="https://www.instagram.com/techfix_i_t_solutions/" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
+              <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                 <Facebook size={20} />
               </a>
-              <a href="https://www.youtube.com/@yaseenmuhammed-319" className="text-gray-400 hover:text-[var(--secondary-color)] transition-colors duration-200">
+              <a href="#" className="text-gray-400 hover:text-[var(--secondary-color)] transition-colors duration-200">
               <FontAwesomeIcon icon={faYoutube} className="text-xl" />
+              </a>
+              <a href="https://www.google.com/maps?q=Lifetime+Fitness+Center+-+46+Al+Maktoum+Rd+-+Deira+-+Riggat+Al+Buteen+-+Dubai&ftid=0x3e5f5cd1b5261c45:0x815696882001454&entry=gps&lucs=,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjMyLjAuNzkwNzYzNDY1MBgAIIgnKlosOTQyMjQ4MjUsOTQyMjcyNDcsOTQyMjcyNDgsOTQyMzExODgsNDcwNzE3MDQsNDcwNjk1MDgsOTQyMTg2NDEsOTQyODIxMzQsOTQyMDMwMTksNDcwODQzMDRCAkFF&skid=30840b0d-3858-47c7-920e-df925c1e2360&g_st=ipc" className="text-gray-400 hover:text-green-300 transition-colors duration-200">
+              <MapPin  size={20}/>
               </a>
             </div>
           </div>
@@ -78,7 +81,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-gray-400 flex-shrink-0" />
-                <span className="text-gray-300">+91 123 456 7890</span>
+                <span className="text-gray-300">+97 156 6922 585</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-gray-400 flex-shrink-0" />
@@ -92,7 +95,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
               <FontAwesomeIcon icon={faWhatsapp} size="lg" />
                 <a href="https://wa.me/971566922585" className="text-gray-300 hover:text-green-400 transition-colors duration-200">
-                6235 227 964
+                +97 156 692 2585
                 </a>
               </div>
             </div>
